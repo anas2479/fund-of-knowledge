@@ -1,0 +1,20 @@
+{
+  "name": "web-dev-knowledge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"eleventy --serve\" \"tailwindcss -i src/css/style.css -o src/css/bundle.css -w\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "concurrently": "^6.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.17"
+  }
+}
