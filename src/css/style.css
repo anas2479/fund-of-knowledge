@@ -10,7 +10,6 @@
 
  .title{
     @apply text-xl text-gray-800 font-medium capitalize;
-    font-family: 'Indie Flower', cursive;
 }
 
 .content-section .description{

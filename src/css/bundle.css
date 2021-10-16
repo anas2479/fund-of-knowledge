@@ -608,20 +608,8 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .mx-auto {
@@ -629,12 +617,24 @@ video {
   margin-right: auto;
 }
 
-.h-screen {
-  height: 100vh;
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.block {
+  display: block;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-w-\[1200px\] {
@@ -654,6 +654,11 @@ video {
   transform: var(--tw-transform);
 }
 
+.-rotate-3 {
+  --tw-rotate: -3deg;
+  transform: var(--tw-transform);
+}
+
 .scale-150 {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -664,16 +669,16 @@ video {
   transform: var(--tw-transform);
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
 
 .items-center {
   align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
 }
 
 .gap-4 {
@@ -688,13 +693,24 @@ video {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+}
+
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -733,6 +749,20 @@ video {
   color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.bg-blend-luminosity {
+  background-blend-mode: luminosity;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .content-section {
@@ -757,7 +787,6 @@ video {
   text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
-  font-family: 'Indie Flower', cursive;
 }
 
 .content-section .description {
@@ -782,6 +811,10 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 }
 
